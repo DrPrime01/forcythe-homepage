@@ -51,6 +51,7 @@ export default function Footer() {
                   key={i}
                   href={item.link}
                   target="_blank"
+                  rel="noreferrer"
                   className="size-9 cursor-pointer rounded-full border border-accent flex justify-center items-center"
                 >
                   <img
