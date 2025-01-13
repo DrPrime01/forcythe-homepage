@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: white;
+}
+
+.marquee-container {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.track {
+  flex: 0 0 auto;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  animation: marquee 42.88875s linear infinite;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
+
+.track2 {
+  flex: 0 0 auto;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  animation: marquee 42.88875s linear infinite;
+  animation-play-state: running;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+}
+
+/* .track:hover {
+  animation-play-state: paused;
+}
+
+.track2:hover {
+  animation-play-state: paused;
+} */
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
